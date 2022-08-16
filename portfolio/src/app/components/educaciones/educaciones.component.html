@@ -1,0 +1,26 @@
+<section id="educacion">
+    <div class="container-fluid">
+      <h2><em>EDUCACION</em></h2>
+      <div class="col-lg-md-sm-2">
+        <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged"><i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <!--button class="btn" (click)="openAddEducacion()"><i class="fa-solid fa-plus"></i></button>
+          <div class="" *ngIf="addSwitch==true">
+            <app-add-educacion [title]="'Ingresar Educación'" [educacion]="educacion" #modal
+            (onAddEducacion)="addEducacion(educacion)"></app-add-educacion>
+          </div-->
+        
+          <app-educacion *ngFor="let educacion of educaciones"
+          [educacion]="educacion"></app-educacion>
+          
+          <!--(deleteEducacion)="deleteEducacion(educacion)"
+          (updateEducacion)="updateEducacion(educacion)"
+          (addEducacion)="addEducacion(educacion)">
+          </app-educacion-->
+        </li>
+      </ul>
+    </div>
+  </section>

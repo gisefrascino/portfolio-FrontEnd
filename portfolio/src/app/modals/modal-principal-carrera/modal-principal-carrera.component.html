@@ -1,0 +1,25 @@
+<div class="modal-edit-carrera">
+    <div class="container" *ngIf="persona">
+      <div class="row">
+        <div>
+          <form (ngSubmit)="onUpdate" novalidate #f="ngForm">
+            <h4><b>{{title}}</b></h4>
+            <div class="form_group">
+              <label for="carrera">Carrera</label>
+              <input type="text" class="form-control" id="carrera" name="carrera" [(ngModel)]="persona.titulo" required>
+            </div>
+            <!--[ngModelOptions]="{standalone:true}"-->
+            <div>
+              <button class="btn btn-primary" id="btn_aceptar_carrera">Actualizar</button>
+            </div>
+            <div>
+              <button id="btn_cancelar_carrera" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar
+              </button>
+          </div>
+      </form>
+    </div>
+  </div>
+
+
+      
+                  

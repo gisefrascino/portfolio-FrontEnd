@@ -1,0 +1,34 @@
+<div class="row experiencia">
+    <div class="col-lg-md-sm-4">
+      <h3>{{experiencia.empresa}}</h3>
+    </div>
+    <div class="col-lg-md-sm-7">   
+      <p class="text_puesto">{{experiencia.puesto}}</p>
+      <p class="text_periodo">{{experiencia.fecha_inicio}} - {{experiencia.fecha_fin}}</p>
+      <p class="text_tareas">{{experiencia.tareas}}</p>
+    </div>
+    <div class="col-lg-md-sm-1">  
+      <div *ngIf="isLogged">
+        <button type="button" id="btn-edit-cuspide" routerLink="/editexperiencia/{{experiencia.id}}">
+          <i class="fas fa-pen"></i></button>    
+      </div>  
+
+
+      <!--div class="" *ngIf="modaleSwitch==true">
+        <app-modal-experiencia-edit [title]="'Editar Experiencia'" [experiencia]="experiencia" #modal
+        (onUpdateM)="onUpdateExperiencia(experiencia)"></app-modal-experiencia-edit>
+      </div-->
+
+
+      <div *ngIf="isLogged">
+        <button type="button" id="btn-rem-cuspide" class="btn btn-danger" routerLink="/remexperiencia/{{experiencia.id}}">
+          <i class="fa-solid fa-xmark"></i></button> 
+      </div>
+
+
+      <!--div class="" *ngIf="modalrSwitch==true">
+        <app-modal-experiencia-rem [experiencia]="experiencia"
+        (onDeleteM)="onDeleteExperiencia(experiencia)"></app-modal-experiencia-rem>
+      </div-->
+    </div>
+  </div> 

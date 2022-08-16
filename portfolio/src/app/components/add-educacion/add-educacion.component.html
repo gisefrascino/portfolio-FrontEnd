@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate" novalidate #f="ngForm">
+                <h4><b>Ingrese nueva educación</b></h4>
+                <div class="form_group">
+                    <label for="institucion">Institucion</label>
+                    <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="institucion" required>
+                </div>
+                <div class="form_group">
+                    <label for="titulo">Id</label>
+                    <input id="titulo" type="text" name="titulo" class="form-control" [(ngModel)]="titulo" required>
+            </div>
+            <div class="form_group">
+                <label for="fecha_inicio">Institución</label>
+                <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="fecha_inicio" required>
+            </div>
+            <div class="form_group">
+                <label for="fecha_fin">Titulo</label>
+                <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="fecha_fin"required>
+            </div>
+            <div>
+                <button class="btn btn-primary" id="btn_aceptar_experiencia">Agregar
+                </button>
+            </div>
+            <!--button id="btn_cancelar_experiencia" type="reset" class="btn btn-secondary" (click)="closeAdd"()>Cancelar
+            </button-->
+            </form>
+        </div>
+    </div>
+</div>

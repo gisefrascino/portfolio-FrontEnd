@@ -1,0 +1,23 @@
+<section id="experiencia">
+    <div class="container-fluid">
+        <h2><em>EXPERIENCIA LABORAL</em></h2>
+        <div class="col-lg-md-sm-2">
+            <button type="button" class="btn btn-success" routerLink="/nuevaexp"><i class="fa-solid fa-plus"></i>
+                    <!--*ngIf="isLogged"-->
+            </button>
+        </div>
+        <ul>
+            <li>
+                <!--app-add-educacion text="Agregar"
+                (onAddEducacion)="addEducacion($event)"></!app-add-educacion-->
+
+                <app-experiencia *ngFor="let experiencia of experiencias"
+                [experiencia]="experiencia"></app-experiencia>
+
+                <!--(DeleteExperiencia)="deleteExperiencia(experiencia)"
+                (UpdateExperiencia)="updateExperiencia(experiencia)"-->
+            </li>
+        </ul>
+    </div>
+</section>
+  

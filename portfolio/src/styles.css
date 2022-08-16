@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  }
+  
+  h2 {
+      padding-top: 20px;
+  }
+
+  h3{
+    padding-top: 20px;
+  }
+  
+  h3.educacion{
+    padding: 0;
+  }
+ 
+  p{
+      font-size: 20px;
+  }
+
+  a {
+      text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+}
+  
+  #experiencia{
+    margin-top: 150px;
+  }
+  #educacion{
+    margin-top: 150px;
+}
+  #skills {
+    margin-top: 150px;
+}
+  #proyectos{
+    margin-top: 150px;
+  }

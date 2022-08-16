@@ -1,0 +1,24 @@
+<div class="container container-fluid">
+    <div class="container-form">
+      <form class="login-form">
+        <h2 class="inicio-sesion">Inicia Sesion</h2>
+        <div class="mb-3 form-usuario">
+          <label for="id_usuario" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="id_usuario" name="usuario" placeholder="Introduce tu nombre de usuario" aria-describedby ="Usuario" value="" autofocus>
+        </div>
+        <div class="mb-3 form-password">
+          <label for="id_password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="id_password" name="contraseña" minlength="6" maxlength="10" placeholder="Introduce tu contraseña" value="">
+          <span id="ver_clave" class="ver-clave"><i id="icono" class="fas fa-eye"></i></span> 
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="login-check">
+          <label class="form-check-label" for="login-check">Recordarme</label>
+        </div>
+        <div class="mb-3 form-button">
+          <button type="submit" class="button" id="btn_enviar"><!--onclick="go()"-->Enviar</button>
+        </div>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </form>
+    </div>
+  </div>

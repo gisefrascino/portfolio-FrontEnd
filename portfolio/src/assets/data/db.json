@@ -1,0 +1,104 @@
+[{	
+	"id":"1",
+	"nombre": "Gisela Frascino",
+	"img_fondo":"https://i.ibb.co/rvyPKxw/Fondo.webp",
+	"img_perfil":"https://i.ibb.co/HCvs3nx/Img-profile.webp",
+	"titulo": "Desarrollador Web Full Stack Junior",
+	"ciudad": "Cordoba",
+	"pais": "Argentina",
+	"info_profesional": "Me desempeñé como empleada administrativa en mis ultimos trabajos, pero mi aspiracion es trabajar en sistemas",
+	
+	"experiencia_laboral": [{
+			"id":"1",
+			"empresa":"Boutique EF",
+			"puesto":"Vendedora y cajera",
+			"periodo":"Temporada verano 1997",
+			"tareas":"Tareas de venta y caja"
+	},
+	{
+			"id":"2",
+			"empresa": "Cúspide Compañia Argentina de Seguros S.A. - Liquidacion -",
+			"puesto": "empleada administrativa y de procuracion",
+			"periodo": "noviembre 2001 a octubre 2009",
+			"tareas": "Tareas administrativas y de procuracion y atencion al cliente"
+	},
+	{
+			"id":"3",
+			"empresa": "Distribuidora de Diarios y Revistas Cordoba S.A.",
+			"puesto": "administrativa",
+			"periodo": "noviembre de 2009 a diciembre de 2019",
+			"tareas": "Tareas administrativas y atencion al cliente"
+		}
+	],
+	"educacion": [{
+			"id":"1",
+			"institucion": "Escuela Superior de Comercio Dr. Manuel Belgrano",
+			"titulo": "Analista de Sistemas Informaticos",
+			"periodo": " Marzo 1998 a Octubre 2003"
+		},
+		{
+			"id":"2",
+			"institucion": "Depto. Cultural - Facultad de Lenguas - UNC",
+			"titulo": "Ingles",
+			"periodo": "Marzo 2006 a Noviembre 2010"
+		},
+		{
+			"id":"3",
+			"institucion": "Consejo Profesional de Ciencias Informaticas",
+			"titulo": "Visual Basic nivel I y II y Visual.Net nivel I",
+			"periodo": "Marzo 2002 a Noviembre 2003"
+		},
+		{
+			"id":"4",
+			"institucion": "Consejo Profesional de Ciencias Informaticas",
+			"titulo": "Reparacion de PC",
+			"periodo": "Marzo a Junio 2003"
+		},
+		{
+			"id":"5",
+			"institucion": "Facultad de Ciencias Económicas - UNC",
+			"titulo": "Matematica I y II",
+			"periodo": "Marzo a Diciembre 1996"
+		}
+	],
+	"habilidad":[{
+		"id":"1",
+		"nombre":"Trabajo en Equipo",
+		"porcentaje":"80"
+	},
+	{
+		"id":"2",
+		"nombre":"Gestión",
+		"porcentaje":"75"
+	},
+	{
+		"id":"3",
+		"nombre":"Inglés",
+		"porcentaje":"90"
+	},
+	{
+		"id":"4",
+		"nombre":"Adaptación",
+		"porcentaje":"75"	
+	},
+	{
+		"id":"5",
+		"nombre":"Aptitudes de Organización",
+		"porcentaje":"80"
+	},
+	{
+		"id":"6",
+		"nombre":"Contacto con el Cliente",
+		"porcentaje":"90"	
+	}
+	],
+	"proyecto":[{
+		"id":"1",
+		"nombre":"Argentina Programa - Proyecto Final",
+		"fecha_realizacion":"Agosto 2022",
+		"descripcion":"Trabajo Final Full Stack Developer",
+		"link":"no tengo aun",
+		"img_proyecto":"https://i.ibb.co/6FxK8pH/img-proyecto.png"
+	}]
+
+	}]
