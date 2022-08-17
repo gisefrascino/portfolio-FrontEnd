@@ -32,7 +32,7 @@ export class ModalPrincipalProfComponent implements OnInit {
   };
   onUpdate():void{
     const id=this.activatedRoute.snapshot.params['id'];
-    this.datosPortfolio.updatePersona(id,this.persona).subscribe(data=>{
+    this.datosPortfolio.updatePersonaInfo_Prof(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);
     }, err =>{
       alert("Error al actualizar informacion profesional");

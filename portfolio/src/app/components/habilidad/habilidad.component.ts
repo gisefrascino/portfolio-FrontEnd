@@ -11,7 +11,7 @@ import { Habilidad } from 'src/app/models/Habilidad';
   styleUrls: ['./habilidad.component.css']
 })
 export class HabilidadComponent implements OnInit {
-  @Input () habilidad:Habilidad=new Habilidad("",0,0);
+  @Input () habilidad:Habilidad=new Habilidad("",0);
  
   constructor(private datosHabilidad:HabilidadService) { }
 

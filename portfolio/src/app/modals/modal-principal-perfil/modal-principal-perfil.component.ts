@@ -1,21 +1,17 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import {UiService} from '../../services/ui.service';
-import { Persona } from '../../models/Persona';
-import { EventEmitter } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Persona } from 'src/app/models/Persona';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
-  selector: 'app-modal-principal-carrera',
-  templateUrl: './modal-principal-carrera.component.html',
-  styleUrls: ['./modal-principal-carrera.component.css']
+  selector: 'app-modal-principal-perfil',
+  templateUrl: './modal-principal-perfil.component.html',
+  styleUrls: ['./modal-principal-perfil.component.css']
 })
-export class ModalPrincipalCarreraComponent implements OnInit {
+export class ModalPrincipalPerfilComponent implements OnInit {
   @Input() title="";
   persona:Persona=null;
-  //@Input() persona:Persona=new Persona("","","","","","","","");
-  //@Output() onUpdateM:EventEmitter<Persona>=new EventEmitter();
-
 
   constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router,private modalUs:UiService) { }
 
@@ -25,18 +21,18 @@ export class ModalPrincipalCarreraComponent implements OnInit {
       data=>{
         this.persona=data;
       }, err =>{
-        alert("Error al actualizar carrera");
+        alert("Error al actualizar imagen de perfil");
         this.router.navigate(['']);
       }
     )
-  };
+  }
 
   onUpdate():void{
     const id=this.activatedRoute.snapshot.params['id'];
-    this.datosPortfolio.updatePersonaCarrera(id,this.persona).subscribe(data=>{
+    this.datosPortfolio.updatePersonaImg_Perfil(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);
     }, err =>{
-      alert("Error al actualizar carrera");
+      alert("Error al actualizar imagen de perfil");
       this.router.navigate(['']);
     }
     )
@@ -46,4 +42,3 @@ export class ModalPrincipalCarreraComponent implements OnInit {
     this.modalUs.$modal.emit(false)
   };
 }
-

@@ -1,0 +1,22 @@
+<div class="modal-edit-perfil">
+    <div class="container" *ngIf="persona">
+      <div class="row">
+        <div>
+          <form (ngSubmit)="onUpdate" novalidate #f="ngForm">
+            <h4><b>{{title}}</b></h4>
+            <div class="form_group">
+              <label for="img_perfil">Imagen de Perfil</label>
+              <input type="text" class="form-control" id="img_perfil" name="img_perfil" [(ngModel)]="persona.img_perfil" required [ngModelOptions]="{standalone:true}">
+            </div>
+            <!--[ngModelOptions]="{standalone:true}"-->
+            <div>
+              <button class="btn btn-primary" id="btn_aceptar_perfil">Actualizar</button>
+            </div>
+            <div>
+              <button id="btn_cancelar_perfil" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar
+              </button>
+          </div>
+      </form>
+    </div>
+  </div>
+

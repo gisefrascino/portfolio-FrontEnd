@@ -35,6 +35,8 @@ import { ProyectoService } from './services/proyecto.service';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AddExperienciaComponent } from './components/add-experiencia/add-experiencia.component';
+import { ModalPrincipalFondoComponent } from './modals/modal-principal-fondo/modal-principal-fondo.component';
+import { ModalPrincipalPerfilComponent } from './modals/modal-principal-perfil/modal-principal-perfil.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { AddExperienciaComponent } from './components/add-experiencia/add-experi
     ModalPrincipalRemComponent,
     HomeComponent,
     LoginComponent,
-    AddExperienciaComponent
+    AddExperienciaComponent,
+    ModalPrincipalFondoComponent,
+    ModalPrincipalPerfilComponent
   ],
   imports: [
     BrowserModule,

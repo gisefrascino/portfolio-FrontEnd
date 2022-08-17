@@ -1,7 +1,7 @@
 <section id="educacion">
     <div class="container-fluid">
       <h2><em>EDUCACION</em></h2>
-      <div class="col-lg-md-sm-2">
+      <div class="col-lg-md-sm-2" *ngIf="isLogged">
         <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged"><i class="fa-solid fa-plus"></i>
         </button>
       </div>
@@ -24,3 +24,4 @@
       </ul>
     </div>
   </section>
+

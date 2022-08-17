@@ -29,9 +29,9 @@ export class ModalPrincipalRemComponent implements OnInit {
     )
   }
 
-  onUpdate():void{
+  onDelete():void{
     const id=this.activatedRoute.snapshot.params['id'];
-    this.datosPortfolio.updatePersona(id,this.persona).subscribe(data=>{
+    this.datosPortfolio.deletePersonaInfo_Prof(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);
     }, err =>{
       alert("Error al borrar informacion profesional");

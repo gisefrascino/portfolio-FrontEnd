@@ -9,6 +9,8 @@ import { ModalEducacionRemComponent } from './modals/modal-educacion-rem/modal-e
 import { ModalExperienciaEditComponent } from './modals/modal-experiencia-edit/modal-experiencia-edit.component';
 import { ModalExperienciaRemComponent } from './modals/modal-experiencia-rem/modal-experiencia-rem.component';
 import { ModalPrincipalCarreraComponent } from './modals/modal-principal-carrera/modal-principal-carrera.component';
+import { ModalPrincipalFondoComponent } from './modals/modal-principal-fondo/modal-principal-fondo.component';
+import { ModalPrincipalPerfilComponent } from './modals/modal-principal-perfil/modal-principal-perfil.component';
 import { ModalPrincipalProfComponent } from './modals/modal-principal-prof/modal-principal-prof.component';
 import { ModalPrincipalRemComponent } from './modals/modal-principal-rem/modal-principal-rem.component';
 
@@ -23,7 +25,9 @@ const routes: Routes = [
   {path:'remeducacion/:id', component:ModalEducacionRemComponent},
   {path:'editcarrera/:id', component:ModalPrincipalCarreraComponent},
   {path:'editinfo_prof/:id', component:ModalPrincipalProfComponent},
-  {path:'reminfo_prof/:id', component:ModalPrincipalRemComponent}
+  {path:'reminfo_prof/:id', component:ModalPrincipalRemComponent},
+  {path:'editimg_fondo/:id', component:ModalPrincipalFondoComponent},
+  {path:'editimg_perfil/:id', component: ModalPrincipalPerfilComponent}
 ];
 
 @NgModule({
