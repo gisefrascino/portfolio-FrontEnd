@@ -8,11 +8,14 @@ import { Proyecto } from '../models/Proyecto';
 })
 export class ProyectoService {
   private apiUrl:string='http://localhost:8080/proyectos/';
-  proyectos:Proyecto[]=[];
+  //proyectos:Proyecto[]=[];
 
   constructor(private http:HttpClient) { }
 
-  obtenerDatos():Observable<Proyecto[]>{
+  public lista():Observable<Proyecto[]>{
     return this.http.get<Proyecto[]>(this.apiUrl+'traer');
 }
+  public detalle(id:number):Observable<Proyecto>{
+    return this.http.get<Proyecto>(this.apiUrl+ `detail/${id}`);
+  }
 }

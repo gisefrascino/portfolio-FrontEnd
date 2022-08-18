@@ -13,10 +13,13 @@ export class ProyectosComponent implements OnInit {
   constructor(private datosProyecto:ProyectoService) { }
 
   ngOnInit(): void {
-   this.datosProyecto.obtenerDatos().subscribe(data=>{
-      console.log(data);
-      this.proyectos=data;
-    });
+    this.cargarProyecto();
   }
+
+
+    cargarProyecto():void{
+      this.datosProyecto.lista().subscribe(
+        data=>{this.proyectos=data});
+      }
 }
 

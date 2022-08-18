@@ -43,7 +43,7 @@ export class ModalExperienciaEditComponent implements OnInit {
   }
 
    closeModal(){
-    this.modalUs.$modal.emit(false)
+    this.router.navigate(['']);
   }
 }
 

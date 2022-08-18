@@ -43,7 +43,8 @@ export class ModalPrincipalCarreraComponent implements OnInit {
   };
 
   closeModal(){
-    this.modalUs.$modal.emit(false)
+    this.router.navigate(['']);
+    //this.modalUs.$modal.emit(false)
   };
 }
 

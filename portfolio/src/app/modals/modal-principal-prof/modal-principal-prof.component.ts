@@ -42,7 +42,8 @@ export class ModalPrincipalProfComponent implements OnInit {
   }
 
   closeModal(){
-    this.modalUs.$modal.emit(false)
+    this.router.navigate(['']);
+    //this.modalUs.$modal.emit(false)
   }
   //onUpdate(persona:Persona){
   //  this.onUpdateM.emit(persona);

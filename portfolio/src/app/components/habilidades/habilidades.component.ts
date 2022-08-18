@@ -14,8 +14,12 @@ export class HabilidadesComponent implements OnInit {
   constructor(private datosHabilidad:HabilidadService) { }
 
   ngOnInit(): void {
-   this.datosHabilidad.obtenerDatos().subscribe(data=>{
-      this.habilidades=data;
-    });
+    this.cargarHabilidad();
   }
-}
+
+
+    cargarHabilidad():void{
+      this.datosHabilidad.lista().subscribe(
+        data=>{this.habilidades=data});
+      }
+    }

@@ -42,7 +42,7 @@ export class ModalExperienciaRemComponent implements OnInit {
   }
   }
   closeModal(){
-    this.modalUs.$modal.emit(false)
+    this.router.navigate(['']);
   }
    
   }

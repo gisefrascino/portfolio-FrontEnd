@@ -8,11 +8,15 @@ import { Habilidad } from '../models/Habilidad';
 })
 export class HabilidadService {
   private apiUrl:string='http://localhost:8080/habilidades/';
-  habilidades:Habilidad[]=[];
+  //habilidades:Habilidad[]=[];
 
   constructor(private http:HttpClient) { }
 
-  obtenerDatos():Observable<Habilidad[]>{
+  public lista():Observable<Habilidad[]>{
     return this.http.get<Habilidad[]>(this.apiUrl+'traer');
-}
+  }
+  public detalle(id:number):Observable<Habilidad>{
+    return this.http.get<Habilidad>(this.apiUrl+ `detail/${id}`);
+  }
+
 }

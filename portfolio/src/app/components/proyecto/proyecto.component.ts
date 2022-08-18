@@ -10,7 +10,7 @@ import { Proyecto } from 'src/app/models/Proyecto';
   styleUrls: ['./proyecto.component.css']
 })
 export class ProyectoComponent implements OnInit {
-  @Input () proyecto:Proyecto=new Proyecto("","","","","");
+  @Input () proyecto:Proyecto=null;
  
   constructor(private datosProyecto:ProyectoService) { }
 

@@ -41,7 +41,7 @@ export class ModalPrincipalRemComponent implements OnInit {
   }
 
   closeModal(){
-    this.modalUs.$modal.emit(false)
+    this.router.navigate(['']);
   }
   /*onDelete(persona:Persona){
     this.onDeleteM.emit(persona);

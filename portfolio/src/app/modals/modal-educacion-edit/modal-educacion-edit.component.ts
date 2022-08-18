@@ -31,9 +31,9 @@ export class ModalEducacionEditComponent implements OnInit {
     )
       };
 
- /* closeModal(){
-    this.modalUs.$modal.emit(false)
-  }*/
+  closeModal(){
+    this.router.navigate(['']);
+  }
   
   onUpdate():void {
     const id= this.activatedRoute.snapshot.params['id'];

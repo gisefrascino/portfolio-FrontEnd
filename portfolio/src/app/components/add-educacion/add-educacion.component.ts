@@ -39,10 +39,10 @@ export class AddEducacionComponent implements OnInit {
       this.router.navigate(['']);
     })
   }
-  /*closeAdd(){
-    this.modalUs.$modal.emit(false)
+  closeAdd(){
+    this.router.navigate(['']);
   }
-  onAdd(educacion:Educacion){
+  /*onAdd(educacion:Educacion){
     console.log("add-educacion")
     if (this.institucion.length===0){
       alert("Por favor ingrese institución");
