@@ -2,17 +2,20 @@
     <div class="container-fluid banner">
       <div *ngIf="isLogged">
         <button type="button" class="btn-edit-fondo btn-right" routerLink="/editimg_fondo/{{persona.id}}"><i class="fas fa-pen"></i></button>
+      </div>
         <img id="fondo-img"
         [src]="persona.img_fondo" alt="Fondo" width="1350px" height="500px" class="img-fluid">
-      </div>
+  
     </div>
 
     <div class="container-fluid">
       <div *ngIf="isLogged">
+
         <button type="button" class="btn-edit-profile btn-right" routerLink="/editimg_perfil/{{persona.id}}"><i class="fas fa-pen"></i></button>
+      </div>
         <img id="profile-img"
         [src]="persona.img_perfil" alt="Foto personal" class="img-fluid">
-      </div>
+
     </div>
     
     <div class="container-fluid">
@@ -26,6 +29,7 @@
         </div>
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
           <div *ngIf="isLogged">
+
             <button type="button" id="btn_edit_carrera" routerLink="/editcarrera/{{persona.id}}">
               <i class="fas fa-pen"></i></button>
           </div>
@@ -44,6 +48,7 @@
         </div>
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
           <div *ngIf="isLogged">
+
             <button id="btn_edit_info_prof" routerLink="/editinfo_prof/{{persona.id}}">
               <i class="fas fa-pen"></i></button>
           </div>
@@ -53,6 +58,7 @@
              (onUpdateM)="onUpdate(persona)"></app-modal-principal-prof>
           </div-->
           <div *ngIf="isLogged">
+
             <button id="btn_rem_info_prof" routerLink="/reminfo_prof/{{persona.id}}">
               <i class="fa-solid fa-xmark"></i></button>
           </div>

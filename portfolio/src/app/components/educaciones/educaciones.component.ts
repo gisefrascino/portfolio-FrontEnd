@@ -15,14 +15,14 @@ export class EducacionesComponent implements OnInit {
  // subscription?:Subscription;
   //addSwitch:boolean=false;
 
-  constructor( private datosEducacion:EducacionService,private modalUs:UiService
+  constructor( private datosEducacion:EducacionService,private modalUs:UiService){}
    // private tokenService:TokenService, 
-    ) { }
+ 
 
   isLogged=false;
 
   ngOnInit(): void {
-    this.cargarEducacion;
+    this.cargarEducacion();
     //if(this.tokenService.getToken()){
     //  this.isLogged=true;
     //  }else{

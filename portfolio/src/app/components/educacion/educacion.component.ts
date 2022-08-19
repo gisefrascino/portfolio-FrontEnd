@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 import { UiService } from 'src/app/services/ui.service';
 import { EventEmitter } from '@angular/core';
 import { Educacion } from 'src/app/models/Educacion';
+import { EducacionService } from 'src/app/services/educacion.service';
 
 @Component({
   selector: 'app-educacion',
@@ -10,7 +11,7 @@ import { Educacion } from 'src/app/models/Educacion';
 })
 export class EducacionComponent implements OnInit {
   isLogged=false
-  @Input () educacion:Educacion=new Educacion("","","","");
+  @Input () educacion:Educacion=null;
   /*@Output() deleteEducacion:EventEmitter<Educacion>=new EventEmitter();
   @Output() updateEducacion:EventEmitter<Educacion>=new EventEmitter();
   @Output() addEducacion:EventEmitter<Educacion>=new EventEmitter();*/
@@ -20,7 +21,7 @@ export class EducacionComponent implements OnInit {
   //addSwitch:boolean=false
   
 
-  constructor( private modalUs:UiService) { }
+  constructor( private modalUs:UiService,datosEducacion:EducacionService) { }
 
   ngOnInit(): void {
    /*   this.modalUs.$modal.subscribe((valor)=>(this.modaleSwitch=valor, this.modalrSwitch=valor, this.addSwitch=valor));

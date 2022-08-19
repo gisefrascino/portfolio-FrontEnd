@@ -32,6 +32,7 @@ export class ModalPrincipalCarreraComponent implements OnInit {
   };
 
   onUpdate():void{
+    console.log("actualizar")
     const id=this.activatedRoute.snapshot.params['id'];
     this.datosPortfolio.updatePersonaCarrera(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);

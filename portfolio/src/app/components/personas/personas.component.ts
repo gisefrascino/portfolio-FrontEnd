@@ -18,7 +18,7 @@ export class PersonasComponent implements OnInit {
   isLogged=false;
 
   ngOnInit(): void {
-    this.cargarPersona;
+    this.cargarPersona();
     //if(this.tokenService.getToken()){
     //  this.isLogged=true;
     //  }else{
@@ -27,6 +27,7 @@ export class PersonasComponent implements OnInit {
   };
 
   cargarPersona():void{
+    console.log("personas component");
     this.datosPortfolio.obtenerDatos().subscribe(
       data=>{this.personas=data});
     }
