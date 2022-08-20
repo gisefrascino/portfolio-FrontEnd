@@ -10,10 +10,8 @@
             </div>
             <!--[ngModelOptions]="{standalone:true}"-->
             <div>
-              <button class="btn btn-primary" id="btn_aceptar_perfil">Actualizar</button>
-            </div>
-            <div>
-              <button id="btn_cancelar_perfil" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar
+              <button id="btn_aceptar_perfil" type="submit" (click)="onUpdate()">Actualizar</button>
+              <button id="btn_cancelar_perfil" type="reset"(click)="closeModal()">Cancelar
               </button>
           </div>
       </form>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
-import { UiService} from 'src/app/services/ui.service';
 import { Experiencia } from 'src/app/models/Experiencia';
 
 @Component({
@@ -10,9 +9,8 @@ import { Experiencia } from 'src/app/models/Experiencia';
 })
 export class ExperienciasComponent implements OnInit {
   experiencias:Experiencia[]=[];
-  //subscription?:Subscription;
 
-  constructor(private datosExperiencia:ExperienciaService, private uiService:UiService) { }
+  constructor(private datosExperiencia:ExperienciaService) { }
   //private tokenService:TokenService
 
   isLogged=false
@@ -31,23 +29,4 @@ export class ExperienciasComponent implements OnInit {
         data=>{this.experiencias=data});
       }
     
-
-
-
-  
-  /*addExperiencia(experiencia:Experiencia){
-    this.datosExperiencia.save(experiencia).subscribe((experiencia)=>{
-      this.experiencias.push(experiencia)
-    })
-    }
-  
-  deleteExperiencia(experiencia:Experiencia){
-    this.datosExperiencia.deleteExperiencia(experiencia).subscribe(()=>{
-      this.experiencias=this.experiencias.filter(x=>x.id!==experiencia.id);
-    });
-  }
-    updateExperiencia(experiencia:Experiencia){
-      this.datosExperiencia.updateExperiencia(experiencia).subscribe();
-    }*/
-  
 }

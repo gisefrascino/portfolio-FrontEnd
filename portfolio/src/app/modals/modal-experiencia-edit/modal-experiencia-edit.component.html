@@ -15,11 +15,11 @@
               <input id="puesto" type="text" name="puesto" class="form-control" [(ngModel)]="experiencia.puesto" required>
             </div>
             <div class="form_group">
-              <label for="fecha_inicio">Periodo</label>
+              <label for="fecha_inicio">Fecha inicio</label>
               <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="experiencia.fecha_inicio" required>
             </div>
             <div class="form_group">
-              <label for="fecha_fin">Tareas</label>
+              <label for="fecha_fin">Fecha finalizacion</label>
               <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="experiencia.fecha_fin" required>
             </div>
             <div class="form_group">
@@ -27,10 +27,8 @@
               <input id="tareas" type="text" name="tareas" class="form-control" [(ngModel)]="experiencia.tareas" required>
             </div>
             <div>
-              <button id="btn_aceptar_experiencia" type="submit" class="btn btn-primary" >Actualizar
-              </button>
-              <button id="btn_cancelar_experiencia" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar
-              </button>
+              <button id="btn_aceptar_experiencia" type="submit" (click)="onUpdate()">Actualizar</button>
+              <button id="btn_cancelar_experiencia" type="reset" (click)="closeModal()">Cancelar</button>
             </div>
           </form>
         </div>

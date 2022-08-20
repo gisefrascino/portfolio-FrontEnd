@@ -9,11 +9,11 @@ import { ExperienciaService } from 'src/app/services/experiencia.service';
   styleUrls: ['./add-experiencia.component.css']
 })
 export class AddExperienciaComponent implements OnInit {
-  empresa:string='';
-  puesto:string='';
-  fecha_inicio:string='';
-  fecha_fin:string='';
-  tareas:string='';
+  empresa:string="";
+  puesto:string="";
+  fecha_inicio:string="";
+  fecha_fin:string="";
+  tareas:string="";
 
   constructor(private datosExperiencia:ExperienciaService, private router:Router) { }
 

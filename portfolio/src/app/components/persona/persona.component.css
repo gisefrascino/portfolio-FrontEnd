@@ -5,81 +5,24 @@ h2.persona{
     padding-top: 150px;
   }
   
-  #btn_edit_carrera,
   #btn_edit_info_prof{
-    padding-top: 150px;
+    padding-top: 160px;
     border-style:none;
     background:none;
   }
+
+  #btn_edit_carrera{
+    padding-top: 200px;
+    border-style:none;
+    background:none;
+  }
+
   #btn_rem_info_prof{
     padding-top: 15px;
     border-style:none;
     background:none;
   }
-  .modal-edit-carrera,
-  .modal-edit-info-prof{
-      display: flex;
-      background-color:  rgb(0,0,0,0.7);
-      align-items: center;
-      justify-content: center;
-      position:fixed;
-      pointer-events:all;
-      opacity: 0.8;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      overflow-y: auto;
-  }
-  h4{
-      margin-bottom: 5px;
-      padding-bottom: 5px;
-  }
-  
-  
-  .container{
-      background-color: #fff;
-      width: 800px;
-      max-width: 100%;
-      padding: 30px 50px;
-      border-radius: 5px;
-      text-align:center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: bold;
-  }
-  
-  #edit_carrera,
-  #edit_info_prof{
-      width: 700px;
-      max-width: 100%;
-      padding: 5px;
-      margin-top: 10px;
-      margin-bottom: 25px;
-  }
-  #btn_aceptar_carrera,
-  #btn_cancelar_carrera,
-  #btn_aceptar_info_prof,
-  #btn_cancelar_info_prof{
-      cursor: pointer;
-      background: rgb(214, 199, 246) ;
-      border-radius: 5px;
-      border-style: none;
-      padding: 6px;
-    }
-  #btn_aceptar_carrera:hover{
-      background: rgb(107, 49, 231);
-  }
-  #btn_cancelar_carrera:hover{
-      background: rgb(107, 49, 231);
-    }
-    #btn_aceptar_info_prof:hover{
-      background: rgb(107, 49, 231);
-  }
-  #btn_cancelar_info_prof:hover{
-      background: rgb(107, 49, 231);
-    }
-   
-  
+    
   @media (min-width:576px){
       #profile-img{
         position: absolute;

@@ -4,8 +4,8 @@
         <form (ngSubmit)="onDelete" novalidate #f="ngForm">
           <h3>ADVERTENCIA</h3>
           <p>¿Está seguro que desea eliminar esta información?</p>
-          <button id="btn_aceptar" type="submit" class="btn btn-primary">Aceptar</button>
-          <button id="btn_cancelar" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar</button>
+          <button id="btn_aceptar" type="submit" (click)="onDelete(experiencia.id)" >Aceptar</button>
+          <button id="btn_cancelar" type="reset" (click)="closeModal()">Cancelar</button>
         </form>
       </div>
     </div>

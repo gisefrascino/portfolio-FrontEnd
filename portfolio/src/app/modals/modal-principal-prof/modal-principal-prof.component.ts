@@ -1,7 +1,5 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
-import { UiService} from '../../services/ui.service';
 import { Persona } from '../../models/Persona';
-import { EventEmitter } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -13,11 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ModalPrincipalProfComponent implements OnInit {
   @Input() title="";
   persona:Persona=null;
-  //@Input() persona:Persona=new Persona("","","","","","","",0);
-  //@Output() onUpdateM:EventEmitter<Persona>=new EventEmitter();
-
-
-  constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router,private modalUs:UiService) { }
+  
+  constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
     const id=this.activatedRoute.snapshot.params['id'];
@@ -32,7 +27,7 @@ export class ModalPrincipalProfComponent implements OnInit {
   };
   onUpdate():void{
     const id=this.activatedRoute.snapshot.params['id'];
-    this.datosPortfolio.updatePersonaInfo_Prof(id,this.persona).subscribe(data=>{
+    this.datosPortfolio.updatePersona(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);
     }, err =>{
       alert("Error al actualizar informacion profesional");
@@ -43,11 +38,7 @@ export class ModalPrincipalProfComponent implements OnInit {
 
   closeModal(){
     this.router.navigate(['']);
-    //this.modalUs.$modal.emit(false)
-  }
-  //onUpdate(persona:Persona){
-  //  this.onUpdateM.emit(persona);
-  //  this.modalUs.$modal.emit(false)
-  //}
+ }
+ 
 }
 

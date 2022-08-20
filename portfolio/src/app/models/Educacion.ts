@@ -4,7 +4,6 @@ export class Educacion {
     institucion:string;
     fecha_inicio:string;
     fecha_fin:string;
-	//persona_id: number;
     
 
     constructor(titulo:string, institucion:string, fecha_inicio:string, fecha_fin:string){
@@ -12,6 +11,5 @@ export class Educacion {
         this.institucion=institucion;
         this.fecha_inicio=fecha_inicio;
         this.fecha_fin=fecha_fin;
-       // this.persona_id=persona_id;
     }
 }

@@ -9,23 +9,21 @@
                   <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="educacion.institucion" required>
               </div>
               <div class="form_group">
-                  <label for="titulo">Id</label>
+                  <label for="titulo">Titulo</label>
                   <input id="titulo" type="text" name="titulo" class="form-control" [(ngModel)]="educacion.titulo" required>
               </div>
               <div class="form_group">
-                  <label for="fecha_inicio">Institución</label>
+                  <label for="fecha_inicio">Fecha inicio</label>
                   <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="educacion.fecha_inicio" required>
               </div>
               <div class="form_group">
-                  <label for="fecha_fin">Titulo</label>
+                  <label for="fecha_fin">Fecha finalizacion</label>
                   <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="educacion.fecha_fin"required>
               </div>
               <div>
-                  <button class="btn btn-primary" id="btn_aceptar_experiencia">Actualizar
-                  </button>
+                  <button id="btn_aceptar_experiencia" type="submit" (click)="onUpdate()">Actualizar</button>
+                  <button id="btn_cancelar_experiencia" type="reset"(click)="closeModal()">Cancelar</button>
               </div>
-              <button id="btn_cancelar_experiencia" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar
-              </button>
             </form>
           </div>
         </div>

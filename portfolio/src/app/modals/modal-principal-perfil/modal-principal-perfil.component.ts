@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Persona } from 'src/app/models/Persona';
 import { PortfolioService } from 'src/app/services/portfolio.service';
-import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-modal-principal-perfil',
@@ -13,7 +12,7 @@ export class ModalPrincipalPerfilComponent implements OnInit {
   @Input() title="";
   persona:Persona=null;
 
-  constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router,private modalUs:UiService) { }
+  constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
     const id=this.activatedRoute.snapshot.params['id'];
@@ -29,7 +28,7 @@ export class ModalPrincipalPerfilComponent implements OnInit {
 
   onUpdate():void{
     const id=this.activatedRoute.snapshot.params['id'];
-    this.datosPortfolio.updatePersonaImg_Perfil(id,this.persona).subscribe(data=>{
+    this.datosPortfolio.updatePersona(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);
     }, err =>{
       alert("Error al actualizar imagen de perfil");

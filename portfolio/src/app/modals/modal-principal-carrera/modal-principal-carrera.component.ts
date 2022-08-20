@@ -1,7 +1,5 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
-import {UiService} from '../../services/ui.service';
 import { Persona } from '../../models/Persona';
-import { EventEmitter } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
@@ -12,12 +10,12 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class ModalPrincipalCarreraComponent implements OnInit {
   @Input() title="";
+ //personas:Persona[]=[];
   persona:Persona=null;
-  //@Input() persona:Persona=new Persona("","","","","","","","");
-  //@Output() onUpdateM:EventEmitter<Persona>=new EventEmitter();
 
 
-  constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router,private modalUs:UiService) { }
+
+  constructor(private datosPortfolio:PortfolioService, private activatedRoute:ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
     const id=this.activatedRoute.snapshot.params['id'];
@@ -32,9 +30,10 @@ export class ModalPrincipalCarreraComponent implements OnInit {
   };
 
   onUpdate():void{
-    console.log("actualizar")
+    console.log("actualizar");
+    console.log(this.persona);
     const id=this.activatedRoute.snapshot.params['id'];
-    this.datosPortfolio.updatePersonaCarrera(id,this.persona).subscribe(data=>{
+    this.datosPortfolio.updatePersona(id,this.persona).subscribe(data=>{
       this.router.navigate(['']);
     }, err =>{
       alert("Error al actualizar carrera");
@@ -45,7 +44,6 @@ export class ModalPrincipalCarreraComponent implements OnInit {
 
   closeModal(){
     this.router.navigate(['']);
-    //this.modalUs.$modal.emit(false)
   };
 }
 

@@ -1,6 +1,4 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from '@angular/core';
-import { UiService} from '../../services/ui.service';
 import { Experiencia } from 'src/app/models/Experiencia';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
 import { ActivatedRoute } from '@angular/router';
@@ -14,9 +12,8 @@ import { Router } from '@angular/router';
 })
 export class ModalExperienciaRemComponent implements OnInit {
   experiencia:Experiencia=null;
-  //@Output() onDeleteM:EventEmitter<Experiencia>=new EventEmitter();
 
-  constructor(private datosExperiencia:ExperienciaService, private activatedRoute:ActivatedRoute, private router:Router,private modalUs:UiService) { }
+  constructor(private datosExperiencia:ExperienciaService, private activatedRoute:ActivatedRoute, private router:Router) { }
 
   ngOnInit(): void {
     const id=this.activatedRoute.snapshot.params['id'];

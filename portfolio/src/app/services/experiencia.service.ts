@@ -22,9 +22,9 @@ export class ExperienciaService {
     return this.http.get<Experiencia[]>(this.apiUrl+'traer');
 }
   public detalle(id:number):Observable<Experiencia>{
-    return this.http.get<Experiencia>(this.apiUrl+ `detail/${id}`);
+    return this.http.get<Experiencia>(this.apiUrl+ `detalle/${id}`);
   }
-
+  
   public save(experiencia:Experiencia):Observable<any>{
     return this.http.post<any>(this.apiUrl+'crear',experiencia);
 
@@ -36,10 +36,6 @@ export class ExperienciaService {
 
   public deleteExperiencia(id:number):Observable<any>{
     return this.http.delete<any>(this.apiUrl+ `borrar/${id}`);
-}
-  
-  //addExperiencia(experiencia:Experiencia):Observable<Experiencia>{
-    //return this.http.post<Experiencia>(this.apiUrl, experiencia, httpOptions)
-  //}
+}  
 }
   

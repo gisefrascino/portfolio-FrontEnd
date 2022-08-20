@@ -28,20 +28,10 @@ export class PersonasComponent implements OnInit {
 
   cargarPersona():void{
     console.log("personas component");
+    console.log(this.personas)
     this.datosPortfolio.obtenerDatos().subscribe(
       data=>{this.personas=data});
     }
 }
-  /*deletePersona(persona:Persona){
-    this.datosPortfolio.deletePersona(persona).subscribe(()=>{
-      this.personas=this.personas.filter(x=>x.id!==persona.id);
-    });
-  }
-  onSubmit(persona:Persona){
-    this.datosPortfolio.addPersona(persona).subscribe...
-  }
-  updatePersona(persona:Persona){
-    this.datosPortfolio.updatePersona(persona).subscribe();
-    console.log("personas")
-  }*/
+
 

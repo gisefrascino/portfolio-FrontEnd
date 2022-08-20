@@ -3,6 +3,9 @@
     height: 50%;
     box-shadow: 10px 10px 5px #5757F9;
 }
-.proyecto{
+#proyectos{
     padding-top: 100px;
+}
+li{
+    list-style-type:none;
 }

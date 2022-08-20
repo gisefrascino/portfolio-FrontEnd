@@ -5,8 +5,6 @@ export class Proyecto {
     descripcion:string;
     link:string;
     img_proyecto:string;
- //   persona_id:number;
-
 	
     constructor(nombre:string,fecha_realizacion:string, descripcion:string, link:string, img_proyecto:string){
         this.nombre=nombre;
@@ -14,6 +12,5 @@ export class Proyecto {
         this.descripcion=descripcion;
         this.link=link;
         this.img_proyecto=img_proyecto;
-//        this.persona_id=persona_id;
     }
 }

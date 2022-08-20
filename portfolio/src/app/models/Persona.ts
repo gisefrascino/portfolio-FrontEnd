@@ -8,7 +8,6 @@ export class Persona {
     info_profesional:string;
     provincia:string;
     pais:string;
-  //  localidad_id: number;
     
     constructor(nombre:string,apellido:string,img_fondo:string, img_perfil:string, titulo:string, info_profesional:string, provincia:string, pais:string){
         this.nombre=nombre;
@@ -19,6 +18,5 @@ export class Persona {
         this.info_profesional=info_profesional;
         this.provincia=provincia;
         this.pais=pais
-  //      this.localidad_id=localidad_id;
     }
 }
