@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EducacionService } from 'src/app/services/educacion.service';
 import { UiService} from 'src/app/services/ui.service';
 import { Educacion } from 'src/app/models/Educacion';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-educaciones',
@@ -10,20 +11,17 @@ import { Educacion } from 'src/app/models/Educacion';
 })
 export class EducacionesComponent implements OnInit {
   educaciones:Educacion[]=[];
-  
-  constructor( private datosEducacion:EducacionService){}
-   // private tokenService:TokenService, 
- 
-
   isLogged=false;
+
+  constructor( private datosEducacion:EducacionService, private tokenService:TokenService){}
 
   ngOnInit(): void {
     this.cargarEducacion();
-    //if(this.tokenService.getToken()){
-    //  this.isLogged=true;
-    //  }else{
-    //    this.isLogged=false;
-    //  }
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+      }else{
+        this.isLogged=false;
+      }
 
     }
 

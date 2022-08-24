@@ -37,6 +37,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AddExperienciaComponent } from './components/add-experiencia/add-experiencia.component';
 import { ModalPrincipalFondoComponent } from './modals/modal-principal-fondo/modal-principal-fondo.component';
 import { ModalPrincipalPerfilComponent } from './modals/modal-principal-perfil/modal-principal-perfil.component';
+import { interceptorProvider } from './services/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,7 @@ import { ModalPrincipalPerfilComponent } from './modals/modal-principal-perfil/m
     NO_ERRORS_SCHEMA
   ],
 
-  providers: [PortfolioService, EducacionService, ExperienciaService, HabilidadService, ProyectoService ],
+  providers: [PortfolioService, EducacionService, ExperienciaService, HabilidadService, ProyectoService, interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
