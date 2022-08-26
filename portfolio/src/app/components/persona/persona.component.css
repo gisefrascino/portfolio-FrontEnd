@@ -1,4 +1,4 @@
-h2.persona{
+    h2.persona{
     padding-top: 150px;
   }
   h3.persona{
@@ -11,6 +11,9 @@ h2.persona{
     background:none;
   }
 
+  .persona{
+    text-decoration: none;
+  }
   #btn_edit_carrera{
     padding-top: 200px;
     border-style:none;
@@ -21,6 +24,10 @@ h2.persona{
     padding-top: 15px;
     border-style:none;
     background:none;
+  }
+
+  .banner{
+    background-color:rgb(225, 222, 222) ;
   }
     
   @media (min-width:576px){
@@ -42,6 +49,15 @@ h2.persona{
         border-radius: 50px;
         border-style: none;
         background-color: #fff;
+      }
+      .btn-edit-fondo{
+        position: relative;
+        top: 60px;
+        left: 1050px;
+        background: aliceblue;
+        padding: 8px;
+        border-radius: 50px;
+        border-style: none;
       }
       }
     
@@ -66,29 +82,15 @@ h2.persona{
       border-style: none;
       background-color: #fff;
     }
-  }
-  .banner{
-    background-color:rgb(225, 222, 222) ;
-  }
-  @media (min-width:576px){
-  
-  .btn-edit-fondo{
-    position: relative;
-    top: 60px;
-    left: 1050px;
-    background: aliceblue;
-    padding: 8px;
-    border-radius: 50px;
-  }
-  }
-  @media (max-width:575px){
-  
     .btn-edit-fondo{
-        position: absolute;
-        top: 400px;
-        left: 530px;
-        background: aliceblue;
-        padding: 8px;
-        border-radius: 50px;
-      }
+      position: relative;
+      top: 50px;
+      left: 440px;
+      background: aliceblue;
+      padding: 8px;
+      border-radius: 50px;
+      border-style: none;
     }
+  }
+  
+ 

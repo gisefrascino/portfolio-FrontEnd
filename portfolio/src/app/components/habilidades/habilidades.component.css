@@ -1,12 +1,9 @@
-circle-progress{
-    padding-left: 40px;
-    padding-right: 40px;
-}
+
 #skills {
     margin-right: 60px;
-    margin-top: 150px;
+    margin-top: 110px;
     border-style: none;
   }
   li{
     list-style-type:none;
-}
+  }

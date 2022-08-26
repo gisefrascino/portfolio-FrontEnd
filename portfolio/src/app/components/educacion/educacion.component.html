@@ -1,12 +1,12 @@
 <div class="row educacion">
-  <div class="col lg-md-sm-4">
-    <h3>{{educacion.institucion}}</h3>
+  <div class="col sm-12 md-4 lg-4">
+    <h4>{{educacion.institucion}}</h4>
   </div>
-  <div class="col lg-md-sm-7">                 
+  <div class="col sm-12 md-7 lg-7">                 
     <p class="text_titulo">{{educacion.titulo}}</p>
     <p class="text_periodo">{{educacion.fecha_inicio}} - {{educacion.fecha_fin}}</p>
   </div>
-  <div class="col lg-md-sm-1">                
+  <div class="col sm-1 md-1 lg-1">                
     <div *ngIf="isLogged">
       <button type="button" routerLink="/editeducacion/{{educacion.id}}">
         <i class="fas fa-pen"></i>

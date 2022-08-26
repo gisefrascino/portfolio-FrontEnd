@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/models/Login-usuario';
 import { AuthService } from 'src/app/services/auth.service';
@@ -18,7 +19,6 @@ export class LoginComponent implements OnInit {
   password!:string;
   roles:string[]=[];
   errMsj!:string;
-
 
   constructor(private tokenService:TokenService, private authService:AuthService,private router:Router) { }
 

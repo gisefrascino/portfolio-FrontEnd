@@ -10,16 +10,18 @@
     display: flex;
     margin-right: 15px;
     padding: 0;
+    background-color: rgb(225, 222, 222);
   }
 .menu-item {
     padding: 8px 12px;
     margin:0 5px ;
     line-height: 40px;
     text-transform: uppercase;
-    /*width: max-content;*/
     cursor: pointer;
 }    
-
+img{
+    background-color: rgb(225, 222, 222);
+}
 #login{
     font-weight: bold;
     background-color:rgb(214, 199, 246);
@@ -27,9 +29,26 @@
     height: 45px;
     text-align:center;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 8px;
     border-style:none;
     border-radius: 5px;
+    font-size:x-large;
+    color: rgb(40, 6, 119);
+}
+
+#logout{
+    font-weight: bold;
+    background-color:rgb(40, 6, 119);
+    width: 150px;
+    height: 65px;
+    text-align:center;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-style:none;
+    border-radius: 5px;
+    font-size: medium;
+    color: rgb(214, 199, 246);
+    line-height: 17px;
 }
 .nav-link:hover{
     background-color: #cd9ef7;

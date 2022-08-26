@@ -1,6 +1,12 @@
 button{
-    margin-left: 390px;
+    margin-left: 340px;
 }
 li{
     list-style-type:none;
+}
+#experiencia{
+    margin-top: 40px;
+}
+.container{
+    background-color: rgb(38, 17, 191);
 }

@@ -1,13 +1,13 @@
 <div class="row experiencia">
-    <div class="col lg-md-sm-4">
-      <h3>{{experiencia.empresa}}</h3>
+    <div class="col sm-12 md-4 lg-4">
+      <h4>{{experiencia.empresa}}</h4>
     </div>
-    <div class="col lg-md-sm-7">   
+    <div class="col sm-12 md-7 lg-7">   
       <p class="text_puesto">{{experiencia.puesto}}</p>
       <p class="text_periodo">{{experiencia.fecha_inicio}} - {{experiencia.fecha_fin}}</p>
       <p class="text_tareas">{{experiencia.tareas}}</p>
     </div>
-    <div class="col lg-md-sm-1">  
+    <div class="col sm-1 md-1 lg-1">  
       <div *ngIf="isLogged">
         <button type="button" id="btn-edit-cuspide" routerLink="/editexperiencia/{{experiencia.id}}">
           <i class="fas fa-pen"></i></button>    

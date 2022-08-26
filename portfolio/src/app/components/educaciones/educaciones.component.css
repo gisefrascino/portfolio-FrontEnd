@@ -1,6 +1,10 @@
 button{
-    margin-left: 220px;
+    margin-left: 180px;
 }
 li{
     list-style-type:none;
+}
+
+#educacion{
+    margin-top: 70px;
 }

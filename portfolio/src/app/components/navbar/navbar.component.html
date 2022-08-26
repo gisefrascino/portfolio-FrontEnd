@@ -9,7 +9,7 @@
         <a href="https://api.whatsapp.com/send?phone=543513460356" class="menu-item nav-link"><img src="../assets/imagenes/whatsapp.png" alt="logo-whatsapp" width="45" height="45"></a>
         <a href="https://www.instagram.com/giselafrascino/" class="menu-item nav-link"><img src="../assets/imagenes/instagram.png" alt="logo-instagram" width="45" height="45"></a>
         <button type="button" class="menu-item nav-link" id="login" (click)="login()" *ngIf="!isLogged">LOGIN</button>
-        <button type="button" class="menu-item nav-link" id="login" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+        <button type="button" class="menu-item nav-link" id="logout" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
       </div>
     </div>
 </div>

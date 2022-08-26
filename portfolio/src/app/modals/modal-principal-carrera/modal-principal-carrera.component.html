@@ -8,10 +8,9 @@
               <label for="carrera">Carrera</label>
               <input type="text" class="form-control" id="carrera" name="carrera" [(ngModel)]="persona.titulo" required [ngModelOptions]="{standalone:true}">
             </div>
-            <!--[ngModelOptions]="{standalone:true}"-->
             <div>
               <button id="btn_aceptar_carrera" type="submit" (click)="onUpdate()">Actualizar</button>
-              <button id="btn_cancelar_carrera" type="reset" class="btn btn-secondary" (click)="closeModal()">Cancelar
+              <button id="btn_cancelar_carrera" type="reset" (click)="closeModal()">Cancelar
               </button>
           </div>
       </form>
