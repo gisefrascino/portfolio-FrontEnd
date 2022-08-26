@@ -2,13 +2,12 @@
     <div class="container" *ngIf="persona">
       <div class="row">
         <div>
-          <form (ngSubmit)="onUpdate" novalidate #f="ngForm">
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
             <h4><b>{{title}}</b></h4>
             <div class="form_group">
               <label for="img_fondo">Imagen de Fondo</label>
               <input type="text" class="form-control" id="img_fondo" name="img_fondo" [(ngModel)]="persona.img_fondo" required [ngModelOptions]="{standalone:true}">
             </div>
-            <!--[ngModelOptions]="{standalone:true}"-->
             <div>
               <button id="btn_aceptar_fondo" type="submit" (click)="onUpdate()">Actualizar</button>
               <button id="btn_cancelar_fondo" type="reset" (click)="closeModal()">Cancelar

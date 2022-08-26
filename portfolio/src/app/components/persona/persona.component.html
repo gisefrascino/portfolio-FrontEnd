@@ -5,7 +5,6 @@
       </div>
         <img id="fondo-img"
         [src]="persona.img_fondo" alt="Fondo" width="1350px" height="500px" class="img-fluid">
-  
     </div>
 
     <div class="container-fluid">
@@ -18,26 +17,26 @@
     
     <div class="container-fluid">
       <div class="row">
-        <div class="col sm-12 md-3 lg-3">
+        <div class="col-sm-12 col-md-3 col-lg-3">
           <h2 class="persona">{{persona.nombre}} {{persona.apellido}}</h2>
           <div>
             <p id="text_carrera">{{persona.titulo}}</p>
             <p>{{persona.provincia}}, {{persona.pais}}</p>
           </div>
         </div>
-        <div class="col sm-1 md-1 lg-1">
+        <div class="col-sm-1 col-md-1 col-lg-1">
           <div *ngIf="isLogged">
             <button type="button" id="btn_edit_carrera" routerLink="/editcarrera/{{persona.id}}">
               <i class="fas fa-pen"></i></button>
           </div>
         </div>
-        <div class="col sm-12 md-7 lg-7">
+        <div class="col-sm-12 col-md-7 col-lg-7">
           <h3 class="persona">Informacion Profesional</h3>
           <div>
               <p id="text_info_prof">{{persona.info_profesional}}</p>
           </div>            
         </div>
-        <div class="col sm-1 md-1 lg-1">
+        <div class="col-sm-1 col-md-1 col-lg-1">
           <div *ngIf="isLogged">
             <button id="btn_edit_info_prof" routerLink="/editinfo_prof/{{persona.id}}">
               <i class="fas fa-pen"></i></button>
