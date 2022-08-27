@@ -1,74 +1,57 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .container-form{
+  .container-fluid{
     display: flex;
+    background-color:  rgb(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    pointer-events:all;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+  .container-form{
+    background-color: rgb(175, 145, 245);
     opacity: 0.7;
     width: 400px;
-    height: 420px;
-    margin: auto;
-    top: 5%;
-    left: 35%;
-    box-shadow: 7px 13px 37px #000;
-    position: absolute;
-    padding: 25px;
+    max-width: 100%;
     border-radius: 5px;
-    box-sizing:border-box;
-    background:aliceblue;
     text-align: center;
-  }
+    box-shadow: 7px 13px 37px #000;
+    padding: 30px 50px;
 
+  }
+  
   input{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     height: 30px;
 
   }
-    .form-email,
-    .form-password{
-      width: 350px;
-      height: 50px;
-      margin-top: 30px;
-      padding:0 15px;
-      position: relative;
-    }
-    
     .form-button{
       height: 45px;
-      margin-top:  55px;
-      margin-left: 5px;
+      margin-top:  45px;
+      margin-left: 2px;
     }
     
     .button{
-      width: 93%;
+      width: 100%;
       cursor: pointer;
       background: rgb(214, 199, 246) ;
       border-radius: 5px;
       border-style: none;
       padding: 6px;
     }
-    .boton:hover{
+    /*.button:hover{
       background: rgb(107, 49, 231);
-    }
+    }*/
     form h2 {
       padding: 20px;
       border-bottom: 1px solid;
       text-align: center;
     }
     
-    .container a{
-      color: rgb(107, 49, 231);
-      text-decoration: none;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .container p {
-      color: rgb(51, 50, 50);
-      text-decoration: none;
-      font-size: 14px;
-      margin-left: 25px;
-    }

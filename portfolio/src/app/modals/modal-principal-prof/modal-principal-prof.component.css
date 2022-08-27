@@ -19,7 +19,7 @@ h4{
 
 
 .container{
-    background-color: #fff;
+    background-color: rgb(175, 145, 245);
     width: 800px;
     max-width: 100%;
     padding: 30px 50px;
@@ -27,6 +27,7 @@ h4{
     text-align:center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    box-shadow: 7px 13px 37px #000;
 }
 
 
