@@ -2,26 +2,26 @@
   <div class="container" *ngIf="educacion">
     <div class="row">
         <div>
-            <form (ngSubmit)="onUpdate" novalidate #f="ngForm">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
               <h4><b>{{title}}</b></h4>
                 <div class="form_group">
                   <label for="institucion">Institucion</label>
-                  <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="educacion.institucion" required>
+                  <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="educacion.institucion" required maxlength="50">
               </div>
               <div class="form_group">
                   <label for="titulo">Titulo</label>
-                  <input id="titulo" type="text" name="titulo" class="form-control" [(ngModel)]="educacion.titulo" required>
+                  <input id="titulo" type="text" name="titulo" class="form-control" [(ngModel)]="educacion.titulo" required maxlength="50">
               </div>
               <div class="form_group">
                   <label for="fecha_inicio">Fecha inicio</label>
-                  <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="educacion.fecha_inicio" required>
+                  <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="educacion.fecha_inicio" required maxlength="45">
               </div>
               <div class="form_group">
                   <label for="fecha_fin">Fecha finalizacion</label>
-                  <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="educacion.fecha_fin"required>
+                  <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="educacion.fecha_fin"required maxlength="45">
               </div>
               <div>
-                  <button id="btn_aceptar_experiencia" type="submit" (click)="onUpdate()">Actualizar</button>
+                  <button id="btn_aceptar_experiencia" type="submit">Actualizar</button>
                   <button id="btn_cancelar_experiencia" type="reset"(click)="closeModal()">Cancelar</button>
               </div>
             </form>

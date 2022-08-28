@@ -2,15 +2,14 @@
     <div class="container" *ngIf="persona">
       <div class="row">
         <div>
-          <form (ngSubmit)="onUpdate" novalidate #f="ngForm">
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
             <h4><b>{{title}}</b></h4>
             <div class="form_group">
               <label for="info_profesional">Informacion Profesional</label>
-              <input type="text" class="form-control" id="info_profesional" name="info_profesional" [(ngModel)]="persona.info_profesional" required>
+              <input type="text" class="form-control" id="info_profesional" name="info_profesional" [(ngModel)]="persona.info_profesional" required maxlength="200">
             </div>
-            <!--[ngModelOptions]="{standalone:true}"-->
             <div>
-              <button id="btn_aceptar_info_prof" type="submit" (click)="onUpdate()">Actualizar</button>
+              <button id="btn_aceptar_info_prof" type="submit">Actualizar</button>
               <button id="btn_cancelar_info_prof" type="reset" (click)="closeModal()">Cancelar
               </button>
             </div>  

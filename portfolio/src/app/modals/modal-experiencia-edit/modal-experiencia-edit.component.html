@@ -2,31 +2,31 @@
     <div class="container" *ngIf="experiencia">
       <div class="row">
         <div>
-          <form  (ngSubmit)="onUpdate" novalidate #f="ngForm">
+          <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm">
             <h4><b>{{title}}</b></h4>
 
             <div class="form_group">
               <label for="empresa">Empresa</label>
-              <input id="empresa" type="text" name="empresa" class="form-control" [(ngModel)]="experiencia.empresa" required>
+              <input id="empresa" type="text" name="empresa" class="form-control" [(ngModel)]="experiencia.empresa" required maxlength="60">
             </div>
             <div class="form_group">
               <label for="puesto">Puesto</label>
-              <input id="puesto" type="text" name="puesto" class="form-control" [(ngModel)]="experiencia.puesto" required>
+              <input id="puesto" type="text" name="puesto" class="form-control" [(ngModel)]="experiencia.puesto" required maxlength="45">
             </div>
             <div class="form_group">
               <label for="fecha_inicio">Fecha inicio</label>
-              <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="experiencia.fecha_inicio" required>
+              <input id="fecha_inicio" type="text" name="fecha_inicio" class="form-control" [(ngModel)]="experiencia.fecha_inicio" required maxlength="45">
             </div>
             <div class="form_group">
               <label for="fecha_fin">Fecha finalizacion</label>
-              <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="experiencia.fecha_fin" required>
+              <input id="fecha_fin" type="text" name="fecha_fin" class="form-control" [(ngModel)]="experiencia.fecha_fin" required maxlength="45">
             </div>
             <div class="form_group">
               <label for="tareas">Tareas</label>
-              <input id="tareas" type="text" name="tareas" class="form-control" [(ngModel)]="experiencia.tareas" required>
+              <input id="tareas" type="text" name="tareas" class="form-control" [(ngModel)]="experiencia.tareas" required maxlength="200">
             </div>
             <div>
-              <button id="btn_aceptar_experiencia" type="submit" (click)="onUpdate()">Actualizar</button>
+              <button id="btn_aceptar_experiencia" type="submit">Actualizar</button>
               <button id="btn_cancelar_experiencia" type="reset" (click)="closeModal()">Cancelar</button>
             </div>
           </form>

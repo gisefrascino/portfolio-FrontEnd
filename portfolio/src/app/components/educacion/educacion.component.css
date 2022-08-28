@@ -5,3 +5,8 @@ button{
     padding-top: 10px;
     border-style: none;
 }
+@media(max-width:575px){
+    button{
+        margin-left: 100px;
+    }
+}

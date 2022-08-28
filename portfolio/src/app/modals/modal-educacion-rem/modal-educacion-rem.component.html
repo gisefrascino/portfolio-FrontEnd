@@ -1,9 +1,9 @@
 <div class="modal-rem">
     <div class="container" *ngIf="educacion">
-      <form (ngSubmit)="onDelete" novalidate #f="ngForm">
+      <form (ngSubmit)="onDelete(educacion.id)" novalidate #f="ngForm">
         <h3>ADVERTENCIA</h3>
         <p>¿Está seguro que desea eliminar esta información?</p>
-        <button id="btn_aceptar" type="submit" (click)="onDelete(educacion.id)">Aceptar</button>
+        <button id="btn_aceptar" type="submit">Aceptar</button>
         <button id="btn_cancelar" type="reset"(click)="closeModal()">Cancelar</button>
       </form>
     </div>

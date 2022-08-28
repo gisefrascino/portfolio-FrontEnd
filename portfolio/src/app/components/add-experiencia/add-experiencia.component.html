@@ -2,30 +2,30 @@
     <div class="container">
     <div class="row">
         <div>
-            <form (ngSubmit)="onCreate" novalidate #f="ngForm">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <h4><b>Ingrese nueva experiencia</b></h4>
                 <div class="form_group">
                     <label for="empresa">Empresa</label>
-                    <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="empresa" required>
+                    <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="empresa" required maxlength="60">
                 </div>
                 <div class="form_group">
                     <label for="puesto">Puesto</label>
-                    <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="puesto" required>
+                    <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="puesto" required maxlength="45">
                 </div>
                 <div class="form_group">
                     <label for="fecha_inicio">Fecha inicio</label>
-                    <input type="text" class="form-control" id="fecha_inicio" name="fecha_inicio" [(ngModel)]="fecha_inicio" required>
+                    <input type="text" class="form-control" id="fecha_inicio" name="fecha_inicio" [(ngModel)]="fecha_inicio" required maxlength="45">
                 </div>
                 <div class="form_group">
                     <label for="fecha_fin">Fecha finalizacion</label>
-                    <input type="text" class="form-control" id="fecha_fin" name="fecha_fin" [(ngModel)]="fecha_fin" required>
+                    <input type="text" class="form-control" id="fecha_fin" name="fecha_fin" [(ngModel)]="fecha_fin" required maxlength="45">
                 </div>
                 <div class="form_group">
                     <label for="tareas">Tareas</label>
-                    <input type="text" class="form-control" id="tareas" name="tareas" [(ngModel)]="tareas" required>
+                    <input type="text" class="form-control" id="tareas" name="tareas" [(ngModel)]="tareas" required maxlength="200">
                 </div>
                 <div>
-                    <button id="btn_aceptar_experiencia" type="submit" (click)="onCreate()">Agregar
+                    <button id="btn_aceptar_experiencia" type="submit">Agregar
                     </button>
                     <button id="btn_cancelar_experiencia" type="reset" (click)="closeAdd()">Cancelar
                     </button>

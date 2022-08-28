@@ -2,15 +2,14 @@
     <div class="container" *ngIf="persona">
       <div class="row">
         <div>
-          <form (ngSubmit)="onUpdate" novalidate #f="ngForm">
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
             <h4><b>{{title}}</b></h4>
             <div class="form_group">
               <label for="img_perfil">Imagen de Perfil</label>
               <input type="text" class="form-control" id="img_perfil" name="img_perfil" [(ngModel)]="persona.img_perfil" required [ngModelOptions]="{standalone:true}">
             </div>
-            <!--[ngModelOptions]="{standalone:true}"-->
             <div>
-              <button id="btn_aceptar_perfil" type="submit" (click)="onUpdate()">Actualizar</button>
+              <button id="btn_aceptar_perfil" type="submit">Actualizar</button>
               <button id="btn_cancelar_perfil" type="reset"(click)="closeModal()">Cancelar
               </button>
           </div>

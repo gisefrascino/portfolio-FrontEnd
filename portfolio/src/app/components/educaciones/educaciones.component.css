@@ -8,3 +8,8 @@ li{
 #educacion{
     margin-top: 70px;
 }
+@media(max-width:575px){
+    button{
+        margin-left: 150px;
+    }
+}
