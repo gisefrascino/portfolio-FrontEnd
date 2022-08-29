@@ -7,7 +7,7 @@ import { Proyecto } from '../models/Proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-  private apiUrl:string='http://localhost:8080/proyectos/';
+  private apiUrl:string='https://bkdargprograma.herokuapp.com/proyectos/';
   //proyectos:Proyecto[]=[];
 
   constructor(private http:HttpClient) { }

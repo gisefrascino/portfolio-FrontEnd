@@ -12,7 +12,7 @@ const httpOptions={
   providedIn: 'root'
 })
 export class EducacionService {
-  private apiUrl:string='http://localhost:8080/educaciones/';
+  private apiUrl:string='https://bkdargprograma.herokuapp.com/educaciones/';
   //educaciones:Educacion[]=[];
 
   constructor(private http:HttpClient) { }
