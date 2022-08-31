@@ -13,7 +13,7 @@
     background-color: rgb(225, 222, 222);
   }
 .menu-item {
-    padding: 8px 12px;
+    padding: 8px 8px;
     margin:0 5px ;
     line-height: 40px;
     text-transform: uppercase;
@@ -40,10 +40,10 @@ img{
     font-weight: bold;
     background-color:rgb(40, 6, 119);
     width: 150px;
-    height: 65px;
+    height: 45px;
     text-align:center;
     margin-left: 15px;
-    margin-top: 5px;
+    margin-top: 8px;
     border-style:none;
     border-radius: 5px;
     font-size: medium;
@@ -60,6 +60,10 @@ img{
     transition: 0.5s;
 }
 
+#logout:hover{
+    background-color: #cd9ef7;
+    transition: 0.5s;
+}
 .logo{
     margin-left: 18px;
   }

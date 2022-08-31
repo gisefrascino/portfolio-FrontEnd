@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProyectoService } from 'src/app/services/proyecto.service';
-import { UiService } from 'src/app/services/ui.service';
 import { EventEmitter } from '@angular/core';
 import { Proyecto } from 'src/app/models/Proyecto';
 

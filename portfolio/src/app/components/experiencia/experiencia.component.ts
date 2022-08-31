@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
-import { UiService } from 'src/app/services/ui.service';
 import { Experiencia } from 'src/app/models/Experiencia';
 import { TokenService } from 'src/app/services/token.service';
 
