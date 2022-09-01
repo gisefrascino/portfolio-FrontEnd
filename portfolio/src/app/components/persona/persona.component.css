@@ -58,7 +58,7 @@
       .btn-edit-fondo{
         position: relative;
         top: 60px;
-        left: 460px;
+        left: 500px;
         background: none;
         padding: 8px;
         border-radius: 50px;
@@ -67,14 +67,14 @@
       }
       h2.persona{
         margin-top: 100px;
-        margin-left: 9px;
+        margin-left: 1px;
       }
       #text_carrera,
        #ubicacion{
-        margin-left: 10px;
+        margin-left: 1px;
     }
    }
-    
+  
     @media(max-width:576px){
      #profile-img {
         position: absolute;
